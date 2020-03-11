@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="15dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:elevation="40dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greyDark"
+                    android:padding="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Simple Title Text "
+                    android:background="@color/greyDark"
+                    android:textColor="@color/greyDark"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:lineSpacingExtra="8dp"
+                    android:background="@color/greyDark"
+                    android:textColor="@color/greyDark"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/fenix"
+                    android:lineSpacingExtra="8dp"
+                    android:text="Time:"
+                    android:background="@color/greyDark"
+                    android:textColor="@color/greyDark" />
+
+                <TextView
+                    android:id="@+id/phno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/fenix"
+                    android:text="Phone:"
+                    android:background="@color/greyDark"
+                    android:textColor="@color/greyDark" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="25dp"
+                    app:cornerRadius="20dp"
+                    android:text="Location"
+                    android:background="@color/greyDark"
+                    android:textColor="@color/greyDark"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/greyDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

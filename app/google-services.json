@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "906993346189",
+    "firebase_url": "https://project-fe85d.firebaseio.com",
+    "project_id": "project-fe85d",
+    "storage_bucket": "project-fe85d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906993346189:android:d480305ba5255315e564c4",
+        "android_client_info": {
+          "package_name": "com.example.leben_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906993346189-agk7r9jbc84ocvkecatugep5jo5d5q6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leben_project",
+            "certificate_hash": "81ba0cbeee3dbd8755f6c340bd63e41c99e01369"
+          }
+        },
+        {
+          "client_id": "906993346189-eddkc1lbgp8etstpae7u24jc3fe6qk6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYOELzLthA7HSOr7BOUu75e-1cLeKPwkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906993346189-eddkc1lbgp8etstpae7u24jc3fe6qk6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

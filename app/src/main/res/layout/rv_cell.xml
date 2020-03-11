@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="15dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:id="@+id/card"
+    app:cardElevation="0dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"
+                android:padding="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fenix"
+                android:text="Simple Title Text "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:lineSpacingExtra="8dp"
+                android:fontFamily="@font/fenix"
+                android:text="Location:"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/fenix"
+                android:lineSpacingExtra="8dp"
+                android:text="Time:"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/phno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/fenix"
+                android:text="Phone:"
+                android:textColor="#000000" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/card_bg"
+                android:text="Location"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"/>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
