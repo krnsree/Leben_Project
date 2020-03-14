@@ -113,6 +113,8 @@ public class HospitalFragment extends Fragment {
 
         isDataAvailable = false;
 
+        toolbar.setTitle("");
+
         if (toolbar != null) {
             ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
@@ -123,7 +125,7 @@ public class HospitalFragment extends Fragment {
             }
         }
 
-        toolbar.getNavigationIcon().setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_ATOP);
+        toolbar.getNavigationIcon().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
 
         hospitalList.setHasFixedSize(true);
         hospitalAdapter = new MCAdapter(hospitalLists, getContext(), getActivity().getSupportFragmentManager(), getActivity());

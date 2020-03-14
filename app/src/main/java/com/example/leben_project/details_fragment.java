@@ -240,7 +240,7 @@ public class details_fragment extends Fragment {
 
     private void getComments() {
 
-        ref.collection("Comment").whereEqualTo("uid", listData.getUid()).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        ref.collection("Re").whereEqualTo("uid", listData.getUid()).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {

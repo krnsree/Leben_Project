@@ -1,5 +1,7 @@
 package com.example.leben_project;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +14,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,6 +41,8 @@ public class HomePage extends AppCompatActivity {
     @BindView(R.id.home)
     LinearLayout home;
 
+    @BindView(R.id.emergencyNumber)
+    FloatingActionButton fab;
 
     FragmentManager fragmentManager = getSupportFragmentManager();
     Fragment homeFragment = new HospitalFragment();
@@ -54,6 +61,15 @@ public class HomePage extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:102"));
+                startActivity(intent);
+            }
+        });
 
         HospitalCard.setOnClickListener(new View.OnClickListener() {
             @Override
